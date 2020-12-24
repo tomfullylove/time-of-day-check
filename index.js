@@ -7,7 +7,9 @@ try {
   const currentTime = new Date();
 
   if (blockingHour <= currentTime.getHours()) {
-    core.setFailed(`Pull requests cannot be merged after ${blockingHour}`);
+    core.setFailed(`Looks like you can't merge after ${blockingHour}, time to clock off I guess`);
+  } else {
+    core.setOutput("message", "Phew, it's still early enough to merge");
   }
   const payload = JSON.stringify(github.context.payload, undefined, 2);
   console.log(`The event payload: ${payload}`);

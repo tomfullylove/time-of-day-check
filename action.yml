@@ -6,8 +6,8 @@ inputs:
     required: true
     default: 16
 outputs:
-  blocked: # id of output
-    description: 'Block result'
+  message: # id of output
+    description: 'Action result'
 runs:
   using: 'node12'
   main: 'index.js'
