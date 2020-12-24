@@ -1,0 +1,13 @@
+name: 'Time of day check'
+description: 'Prevents a pull request being merged after a certain time'
+inputs:
+  blocking-hour:  # id of input
+    description: 'Blocking hour: "HH"'
+    required: true
+    default: 16
+outputs:
+  blocked: # id of output
+    description: 'Block result'
+runs:
+  using: 'node12'
+  main: 'index.js'

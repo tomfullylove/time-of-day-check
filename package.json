@@ -1,0 +1,12 @@
+{
+  "name": "time-of-day-check",
+  "version": "1.0.0",
+  "main": "index.js",
+  "repository": "git@github.com:tomfullylove/time-of-day-check.git",
+  "author": "Tom Fullylove <t.fullylove@hotmail.co.uk>",
+  "license": "MIT",
+  "dependencies": {
+    "@actions/core": "^1.2.6",
+    "@actions/github": "^4.0.0"
+  }
+}
