@@ -1,4 +1,6 @@
-on: [pull_request]
+on:
+  pull_request:
+    types: [opened, synchronize, reopened, closed]
 
 jobs:
   time_of_day_check_job:
@@ -10,7 +12,7 @@ jobs:
       - name: Checkout
         uses: actions/checkout@v2
       - name: Time of day check action step
-        uses: ./ # Uses an action in the root directory 
+        uses: ./ # Uses an action in the root directory
         id: time-of-day-check
         with:
           blocking-hour: 11
