@@ -1,9 +1,4 @@
-on:
-  push:
-    branches:
-      - master
-  pull_request:
-    types: [opened]
+on: [pull_request]
 
 jobs:
   time_of_day_check_job:
@@ -18,4 +13,4 @@ jobs:
         uses: ./ # Uses an action in the root directory
         id: time-of-day-check
         with:
-          blocking-hour: 10
+          blocking-hour: 11
