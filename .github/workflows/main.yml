@@ -1,4 +1,6 @@
-on: [pull_request]
+on:
+  pull_request:
+    types: [opened, synchronize, reopened, closed]
 
 jobs:
   time_of_day_check_job:
